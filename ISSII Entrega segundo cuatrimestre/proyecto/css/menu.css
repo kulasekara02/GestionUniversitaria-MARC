@@ -1,0 +1,46 @@
+/* Color de fondo y altura del menú
+ ========================================================================== */
+menu {
+	background: linear-gradient(#75a0d4, #052a52);
+	box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.5);
+	height: auto;
+	text-align: center;
+}
+
+/* Alineación del menú
+ ========================================================================== */
+menu ul, #menuPie {
+	display: inline-block;
+	z-index: 2;
+}
+
+#menuPie {
+	padding-top: 20px;
+}
+
+#menuPie a {
+	text-decoration: none;
+}
+
+
+menu li, #menuPie li {
+	float: left;
+	padding: 3px 20px;
+	margin-top: 5px;
+}
+
+/* Estilos de los botones del menú
+ ========================================================================== */
+menu ul li a {
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+menu li.boton_on a {
+	color: #b3c6e0;
+}
+
+menu ul li a:hover {
+	color: #b3c6e0;
+}

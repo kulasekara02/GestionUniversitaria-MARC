@@ -1,0 +1,140 @@
+@media only screen and (max-width: 600px) {
+	.movil-col-5 {
+		width: 5%;
+	}
+
+	.movil-col-10 {
+		width: 10%;
+	}
+
+	.movil-col-15 {
+		width: 15%;
+	}
+
+	.movil-col-20 {
+		width: 20%;
+	}
+
+	.movil-col-25 {
+		width: 25%;
+	}
+
+	.movil-col-30 {
+		width: 30%;
+	}
+
+	.movil-col-35 {
+		width: 35%;
+	}
+
+	.movil-col-40 {
+		width: 40%;
+	}
+
+	.movil-col-45 {
+		width: 45%;
+	}
+
+	.movil-col-50 {
+		width: 50%;
+	}
+
+	.movil-col-55 {
+		width: 55%;
+	}
+
+	.movil-col-60 {
+		width: 60%;
+	}
+
+	.movil-col-65 {
+		width: 65%;
+	}
+
+	.movil-col-70 {
+		width: 70%;
+	}
+
+	.movil-col-75 {
+		width: 75%;
+	}
+
+	.movil-col-80 {
+		width: 80%;
+	}
+
+	.movil-col-85 {
+		width: 85%;
+	}
+
+	.movil-col-90 {
+		width: 90%;
+	}
+
+	.movil-col-95 {
+		width: 95%;
+	}
+
+	.movil-col-100 {
+		width: 100%;
+	}
+
+	.movil-col-33 {
+		width: 33.33333%;
+	}
+
+	.movil-col-66 {
+		width: 66.66666%;
+	}
+
+	[class*="movil-col-"] {
+		box-sizing: border-box;
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.esconderEnMovil {
+		display: none;
+	}
+	
+	.mostrarEnMovil {
+		display: block;
+	}
+
+	/* Estilos para el menú en móvil
+	 ========================================================================== */
+
+	#desplegableMenu {
+		color: #FFF;
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		height: 29px;
+		text-decoration: none;
+		padding-top: 3px;
+	}
+
+	menu ul {
+		background-color: #75a0d4;
+		display: none;
+		width: 100%;
+		position: relative;
+		border-bottom: #373b3c 1px solid;
+	}
+	menu li {
+		float: none;
+		border-top: #373b3c 1px solid;
+		padding-top: 5px;
+		margin-top: 0px;
+	}
+
+	menu ul li a {
+		font-size: 16px;
+		font-weight: normal;
+	}
+	
+	#menuPie{
+		display: none;
+	}	
+}

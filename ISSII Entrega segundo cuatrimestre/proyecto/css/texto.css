@@ -1,0 +1,30 @@
+/* Añade una fuente de texto por defecto
+ ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Pavanam');
+
+/* Añade estilos por defecto a las etiquetas de escritura más frecuentes
+ ========================================================================== */
+body {
+	font: 14px/1.5 'Pavanam', sans-serif;
+	/*background-color: rgba(179, 198, 224, 0.15);*/
+	background-color: white;
+}
+
+b, strong {
+	font-weight: bolder;
+}
+
+a {
+	font-size: 16px;
+	color: #60a7af;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.2em;
+	color: #666666;
+}
+
+p a {
+	line-height: 2em;
+}

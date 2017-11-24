@@ -1,0 +1,70 @@
+/* General:
+ Corrige algunas características del estilo para todas las etiquetas
+ ========================================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* Documento:
+ Corrige el line-height del documento y se mantiene siempre el footer abajo independientemente de la longitud de la página
+ ========================================================================== */
+html {
+	line-height: 1.15;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 116px;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	height: 116px;
+}
+
+/* Contenidos agrupados y etiquetas:
+ Elimina el estilo de listas
+ Añade el correcto box-sizing del hr
+ Añade el correcto estilo de las etiquetas 'sub' y 'sup'
+ ========================================================================== */
+ul, li {
+	 list-style: none;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Formularios:
+ Se elimina el margen de las etiquetas para formularios
+ ========================================================================== */
+button, input, optgroup, select, textarea {
+	margin: 0;
+}

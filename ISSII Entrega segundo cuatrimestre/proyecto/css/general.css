@@ -1,0 +1,1202 @@
+/* Importación del resto de archivos CSS
+ ========================================================================== */
+@import 'reset.css';
+@import 'texto.css';
+@import 'menu.css';
+@import 'responsivoEscritorio.css';
+@import 'responsivoTablet.css';
+@import 'responsivoMovil.css';
+
+/* Estilos generales para toda la web
+ ========================================================================== */
+.contenedor {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.contenedor::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.noPadding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.alinearCentro {
+	text-align: center;
+}
+
+.alinearIzquierda {
+	text-align: left;
+}
+
+.alinearDerecha {
+	text-align: right;
+}
+
+.posicionarIzquierda {
+	float: left;
+}
+
+.posicionarDerecha {
+	float: right;
+}
+
+.reescalarImagen img {
+	max-width: 100%;
+}
+
+.noLineHeight {
+	line-height: 0;
+}
+
+.columnas {
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	column-gap: 2em;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	-o-column-gap: 2em;
+}
+
+/* Estilos para el header y el footer
+ ========================================================================== */
+header, footer {
+	background-color: #820d1f;
+	text-align: center;
+}
+
+.logoPie {
+	width: 10%;
+	padding-top: 37px;
+}
+
+/* Estilos para el slider
+ ========================================================================== */
+.contenedorSlider {
+	position: relative;
+	overflow: hidden;
+}
+
+#slider {
+	display: flex;
+	width: 400%;
+	margin-left: -100%;
+}
+
+.sliderSection {
+	width: 100%;
+}
+
+.sliderSection img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.botonAnterior, .botonPosterior {
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50%;
+	font-family: Monospace;
+	cursor: pointer;
+}
+
+.botonAnterior:hover, .botonPosterior:hover {
+	background: white;
+}
+
+.botonAnterior {
+	left: 10px;
+}
+
+.botonPosterior {
+	right: 10px;
+}
+
+/* Estilos login.php
+ ========================================================================== */
+
+.recuadro {
+	font-size: 19px;
+}
+
+.recuadro label {
+	color: #666666;
+}
+
+.recuadro h1 {
+	font-size: 34px;
+}
+
+.inicio {
+	border: solid 2px gray;
+	border-radius: 10px;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	background-color: rgba(179, 198, 224, 0.12);
+}
+.inicio input[type=text], .inicio input[type=password] {
+	border: solid 1px gray;
+	border-radius: 10px;
+	padding-left: 2%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+/*Estilos busqueda.php*/
+.barra {
+	background-color: white;
+	width: 70%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 17px;
+	background-color: white;
+	padding: 0.5%;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	background-image: url("../img/varios/buscar.png");
+	background-size: 30px;
+}
+
+.barra:focus {
+	width: 100%;
+}
+
+.buscar:hover {
+	border: solid 2px #38B8C1;
+	color: #38B8C1;
+	cursor: pointer;
+}
+
+.buscador {
+	padding: 3%;
+}
+#formBusqueda {
+	text-align: center;
+	font-size: 18px;
+	padding: 0.5%;
+}
+#formBusqueda input {
+	cursor: pointer;
+	background-color: transparent;
+}
+#formBusqueda input:hover {
+	color: #539DD2;
+}
+
+.contenedorForm {
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	border: solid 2px #ccc;
+	overflow: auto;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 3%;
+	border-radius: 5px;
+}
+
+.formBuscar {
+	padding-bottom: 2%;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 1%;
+	text-align: center;
+}
+
+.formPedirTutoria {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-size: 20px;
+	border: solid 2px #ccc;
+	padding: 5%;
+	border-radius: 5px;
+	color: #464646;
+}
+
+.formPedirTutoria p {
+	font-size: 20px;
+}
+
+.formPedirTutoria select {
+	border: solid 2px #ccc;
+	border-radius: 3px;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: 2%;
+}
+.pedirTutoria {
+	color: #464646;
+	margin-top: 3%;
+	font-size: 20px;
+	border-radius: 5px;
+	border: solid 2px #ccc;
+	background-color: white;
+	padding-left: 2%;
+	padding-right: 2%;
+	cursor: pointer;
+}
+
+.pedirTutoria:hover {
+	border: solid 2px #464646;
+}
+/* Otros estilos
+ ========================================================================== */
+
+.userFallo {
+	animation: tiemblaUser 0.1s 0.0s;
+	background: #FFD8D8;
+}
+@keyframes tiemblaUser{
+0%  { transform: rotateZ(-10deg); }
+50% { transform: rotateZ( 0deg) scale(.8); }
+100%{ transform: rotateZ( 10deg); }
+}
+
+.passFallo {
+	animation: tiemblaPass 0.1s 0.0s;
+	background: #FFD8D8;
+}
+
+@keyframes tiemblaPass{
+0%  { transform: rotateZ(-10deg); }
+50% { transform: rotateZ( 0deg) scale(.8); }
+100%{ transform: rotateZ( 10deg); }
+}
+
+#user:focus, #pass:focus {
+	backfround: white;
+}
+
+.mayus p {
+	margin-top: 12px;
+	font-weight: bold;
+	color: crimson;
+}
+
+.paddingsEspacios {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.titulillo{
+	font-size: 24px;
+}
+
+.descripcionInicio p, .formPedirTutoria p {
+	line-height: 1.6em;
+}
+
+.exito {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 36px;
+}
+
+.exito a{
+	font-size: 36px;
+}
+
+.enlacesPaginacion {
+	text-align: center;
+}
+.paginacion {
+	margin-top: 3%;
+}
+.current {
+	padding: 1% 1.7% 1% 1.7%;
+	font-size: 140%;
+	color: white;
+	text-decoration: underline;
+	border-radius: 100px;
+	font-size: 180%;
+}
+.botonCambio {
+	margin-left: 2%;
+	padding: 4px 12px;
+	width:4.5%;
+	border-radius: 100px;
+	background: #72727e;
+	color: white;
+	cursor: pointer;
+}
+.botonCambio:hover {
+	box-shadow: 0px 0px 10px 0px #797a9e;
+}
+.EnlacesPaginacion .enlacePaginacion {
+	padding: 1% 1.7% 1% 1.7%;
+	font-size: 140%;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 180%;
+}
+.cambiarNumPag {
+	padding: 4px 10px;
+	border-radius: 100px;
+	background: #72727e;
+	color: white;
+	cursor: pointer;
+}
+.cambiarNumPag:hover {
+	box-shadow: 0px 0px 10px 0px #797a9e;
+}
+.cambioPagina {
+	padding-top: 2%;
+	display: none;
+	font-size: 120%;
+}
+.cambioPagina #PAG_TAM {
+	border: solid 1px;
+	border-radius: 5px;
+	padding: 0.2%;
+	width: 7%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.EnlacesPaginacion .enlacePaginacion:hover {
+	background-color: gray;
+	color: white;
+	transition: 0.3s;
+	border-radius: 100px;
+}
+.tutorias {
+	margin-top: 3%;
+	text-align: center;
+	font-family: monospace sans-serif;
+}
+.tutorias .datosTutoria {
+	font: bold;
+	position: center;
+	margin: 0 auto;
+	padding: 1%;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.tutorias .datosTutoria th {
+	font-weight: bold;
+	margin: 0 auto;
+	font-size: 150%;
+	text-align: center;
+}
+.tutorias .datosTutoria td {
+	margin: 1%;
+}
+.tutorias .datosTutoria .etiquetasTutoria {
+	background-color: #AF9CFF;
+}
+.tutorias .EncabezadoTutorias {
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	color: #CBD03A;
+}
+.par {
+	background-color: #D3FFFF;
+}
+.impar {
+	background-color: #7CADFF;
+}
+.aceptada {
+	color: green;
+}
+.rechazada {
+	color: red;
+}
+.espera {
+	color: gray;
+}
+.cambiarBoton {
+	margin-left: 2%;
+	padding: 4px 10px;
+	border-radius: 5px;
+	background: white;
+	color: #38B8C1;
+	border: solid 2px #B1E5DA;
+}
+
+.datoProf{
+	float:left;
+	margin-bottom:3%;
+	font-size:150%;
+}
+.cambiarBoton:hover {
+	box-shadow: 0px 0px 10px 0px #B1E5DA;
+}
+.denegar {
+	background: #FFF;;
+	width: 7%;
+}
+.confirmar {
+	background: #FFF;;
+	width: 7%;
+}
+.cambiar {
+	background: #FFF;;
+}
+
+.denegarImg {
+	width: 60%;
+	height: 10%;
+	background: #FFF;;
+}
+.confirmarImg {
+
+	width: 60%;
+	height: 10%;
+	background: #FFF;;
+}
+
+.datosEditarProfesor {
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	font-family: monospace sans-serif;
+	font-size: 120%;
+	width: 80%;
+	border: solid 2px #6495ED;
+	box-shadow: 0px 0px 10px 0px #797a9e;
+	border-radius: 10px;
+	float: left;
+}
+.datosEditarProfesor p {
+	color: black;
+	margin-left: 4%;
+	width: auto;
+	font-size: 100%;
+}
+.datosEditarProfesor b {
+	color: black;
+	margin-left: 2%;
+	width: auto;
+	font-size: 100%;
+}
+
+.editarDato {
+	width: 100px;
+	background: white;
+	cursor: pointer;
+	float: left;
+	margin-right: -37px;
+	margin-top: -3px;
+}
+.editar {
+	width: 30%;
+	height: 30%;
+}
+.cancelar {
+	width: 30%;
+	height: 30%;
+}
+.grabar {
+	width: 30%;
+	height: 30%;
+}
+.dato {
+	height: 50px;
+	color: black;
+	width: auto;
+	font-size: 100%;
+	float: left;
+	clear: both;
+}
+
+.dato input {
+    width: 10%;
+    color: black;
+    margin-left: 11px;
+    width: auto;
+    background: #FFF;
+    font-size: 100%;
+}
+.dato select {
+	margin-left: 11px;
+	width: 10%;
+	height: 70%;
+	width: auto;
+    margin-top: -2px;
+	clear: both;
+}
+.datosAlumno {
+	margin: 0 auto;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	padding: 5%;
+	font-family: monospace sans-serif;
+	font-size: 150%;
+	border: solid 2px #4F4F4F;
+	border-radius: 10px;
+}
+
+.datosAlumno p, .datosAlumno li {
+	color: black;
+	margin-left: 4%;
+	width: auto;
+	font-size: 100%;
+	color: #003366;
+	line-height: 30px;
+}
+
+hr {
+  height:2px;
+  background-color: #5F5F5F;
+  border:0;
+}
+
+
+.datosAlumno h1 {
+	color: black;
+	margin-left: 2%;
+	width: auto;
+	font-size: 130%;
+	color: #444444;
+}
+.asig {
+	float: left;
+	clear: both;
+}
+
+.mostrarTuto {
+	margin-left: 2%;
+	color: white;
+	width: 10%;
+	float: left;
+	clear: both;
+}
+.tituloTuto {
+	float: left;
+	clear: both;
+}
+
+/*Estilos verProfesor.php
+ ==========================================*/
+
+.datosProfesor {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	border: #939393 solid 2px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: #444444;
+	background: white;
+	clear:both;
+}
+
+.nombreProf {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.emailProf {
+	font-style: italic;
+	color: #38B8C1;
+}
+.depProf {
+	color: #1B799B;
+	font-weight: bold;
+}
+.asignaturasProf {
+	display: none;
+	background-color: white;
+	border-radius: 5px;
+	padding: 1%;
+	border: 1px solid;
+}
+
+.mostrarAsigs {
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mostrarAsigs2 {
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	margin-left:3%;	
+}
+
+.downArrow {
+	width: 10%;
+	vertical-align: middle;
+}
+
+.botonTut {
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	border: 1px solid #444444;
+	background-color: white;
+	border-radius: 3px;
+	color: #444444;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-weight: 500;
+}
+
+.botonVerTut {
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	border: 1px solid #444444;
+	background-color: white;
+	border-radius: 3px;
+	color: #444444;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.botonTut:hover {
+	box-shadow: 1px 1px 5px 1px #444444;
+}
+.botonVerTut:hover {
+	box-shadow: 1px 1px 5px 1px #444444;
+}
+/*Estilos calendario
+ ========================================*/
+.css-class-to-highlight a{
+    background-color:#FFFB6A !important;
+    background-image:none !important;
+    color:orange !important;
+    font-weight:bold !important;
+   }
+
+.ui-widget {
+	font-family: monospace;
+}
+#datepicker {
+	display: flex;
+}
+.formEvento {
+	padding:1%;
+	font-size:17px;
+	width:25%;
+	text-align:center;
+	float:left;
+	margin-top:2%;
+	text-align:center !important; 
+	
+}
+
+div.ui-datepicker{
+ width:250%;
+ font-size:20px;
+ font-family: 'Pontano Sans', sans-serif;
+ color:#F6BA08;
+ border: solid #FFC44D;
+ border-radius:10px;
+
+}
+
+.ui-datepicker-current-day a{
+    background-color:#FFFCDA !important;
+    background-image:none !important;
+    color: blue;
+}
+
+
+.formEvento input {
+	border: solid 1px;
+	margin: 1%;
+	border-radius:5px;
+	
+}
+.conjunto{
+	text-align:center;
+	width:100%;
+	margin-top:8%;
+}
+
+.addEvento{
+	border-radius:5px;
+	padding: 3%;
+	background-color:white;
+	color: #5B5B5B;
+}
+
+.addEvento:active{
+	box-shadow: inset 2px 2px 5px  black;
+}
+#popup{
+	color: #37B2B0;
+	background-color:#F7F7F7;
+}
+
+.eliminarEv{
+	color:red;
+	font-size:20px;
+	font-weight:bold;
+	font-style:monospace;
+	cursor:pointer;
+	float:right;
+}
+.eventos{
+	border: solid 2px #444444;
+	border-radius:10px;
+	padding:3.5%;
+	overflow:auto;
+	box-shadow: 5px 5px 10px 0px gray;
+	font-size:20px;
+}
+
+.misEvs{
+	border: solid 1px;
+	width:50%;
+	font-size:25px;
+	font-weight:bold;
+}
+
+.misEventos{
+	margin: 0 auto;
+	width:80%;
+	padding-right:10%;
+}
+
+.filaEv{
+	text-align:left;
+	border: solid 1px;
+	border-radius:5px;
+	padding-right:10%;
+	padding-left: 5%;
+	width:100%;
+	box-shadow: 3px 3px 5px 0px gray;
+}
+.filaEv b{
+	color:#1591A4;
+}
+.highlighted a{
+   background-color : #B1E5DA !important;
+   background-image :none !important;
+}
+
+.resultadoEv{
+	background-color:white;
+	color:green;
+	border: solid 1px green;
+	border-radius:5px;
+	text-align:center;
+	margin-top:3%;
+	margin-bottom:-7%;
+	font-size:20px;
+	visibility:hidden;
+}
+.evAnadido{
+	background-color:white;
+	visibility:hidden;
+	color:green;
+	border: solid 1px green;
+	border-radius:5px;
+	text-align:center;
+	font-size:20px;
+}
+.evEliminado{
+	background-color:white;
+	visibility:hidden;
+	color:red;
+	border: solid 1px red;
+	border-radius:5px;
+	text-align:center;
+	font-size:20px;
+}
+
+.matriculacion input {
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 0.1%;
+	margin: 1%;
+}
+
+.matriculacion select {
+	border: 1px solid;
+	border-radius: 10px;
+	margin: 1%;
+}
+
+.matriculacion legend {
+	font-size: 170%;
+}
+
+.matriculacion fieldset {
+	padding: 1%;
+	border: 1px solid;
+	border-radius: 10px;
+	font-size: 140%;
+}
+
+.matriculacion .curso {
+	width: 20%
+}
+.matriculacion .acceso {
+	width: 35%;
+}
+
+.matriculacion #apellidos, .matriculacion #email, .matriculacion #telefono, .matriculacion #direccion {
+	width: 30%;
+}
+.matriculacion #nombre, .matriculacion #dni, .matriculacion #cpostal, .matriculacion #provincia {
+	width: 20%;
+}
+
+.matriculacion .dper {
+	display: block;
+}
+.matriculacion .todo {
+	width: 100%;
+	overflow: hidden;
+}
+
+.matriculacion .dac {
+	display: none;
+}
+
+.matriculacion .reg {
+	display: none;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+.matriculacion .conf {
+	display: none;
+}
+
+.matriculacion .asigs1, .matriculacion .asigs2, .matriculacion .asigs3, .matriculacion .asigs4 {
+	border: 2px solid #F7F29F;
+	background: #FFFEDC;
+}
+
+.matriculacion .atras {
+	font-size: 130%;
+	border: 2px solid #2AA4E1;
+	background: #F0F1FF;
+	color: #2AA4E1;
+	font-weight: bold;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+.matriculacion .atras:hover {
+	cursor: pointer;
+	border: 2px solid #F0F1FF;
+	background: #2AA4E1;
+	color: #F0F1FF;
+}
+.matriculacion .siguiente {
+	font-size: 130%;
+	border: 2px solid #2AA4E1;
+	background: #F0F1FF;
+	color: #2AA4E1;
+	font-weight: bold;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+.matriculacion .siguiente:hover {
+	cursor: pointer;
+	border: 2px solid #F0F1FF;
+	background: #2AA4E1;
+	color: #F0F1FF;
+}
+.matriculacion .enviar {
+	font-size: 100%;
+	padding: 1%;
+	margin-top: 3%;
+	color: green;
+	border: 2px solid;
+	background-color: #F2FFF5;
+	cursor: pointer;
+}
+
+.matriculacion .enviar:hover {
+	color: #F2FFF5;
+	background-color: green;
+}
+.matriculacion .ver {
+	border: 2px solid #700E11;
+	color: #700E11;
+	background-color: #FEFFD8;
+	font-size: 100%;
+	padding: 1%;
+	margin-top: 3%;
+}
+
+.matriculacion .ver:hover {
+	background-color: #921115;
+	border: 2px solid #FEFFD8;
+	color: #FEFFD8;
+	cursor: pointer;
+}
+
+.matriculacion .passform, .pass {
+	padding: 2%;
+	display: block;
+	margin: auto;
+}
+.matriculacion .enviarpass {
+	padding: 50%
+}
+.matriculacion input [type=pass] {
+	display: block;
+	margin: auto;
+	width: 30%;
+}
+
+.matriculacion #despacho {
+	width: 20%;
+}
+
+.matriculacion .enviarProf {
+	font-size: 180%;
+	padding-left: 1%;
+	padding-right: 1%;
+	color: green;
+	border: 2px solid;
+	background-color: #F2FFF5;
+	cursor: pointer;
+}
+
+.matriculacion .enviarProf:active {
+	color: #F2FFF5;
+	background-color: green;
+}
+
+.matriculacion .octavio {
+	font-size: 130%;
+	text-align: center;
+	background-color: #E1FFE2;
+	color: #137F16;
+	margin: 5%;
+}
+
+.matriculacion .mayte {
+	text-align: center;
+	font-size: 150%;
+	text-decoration: none;
+	background-color: #DDF1FF;
+	padding-left: 1%;
+	padding-right: 1%;
+	color: #539DD2;
+	border-radius: 10px;
+	border: 2px solid #539DD2;
+}
+.matriculacion .mayte:hover {
+	background-color: #539DD2;
+	color: #DDF1FF;
+	border: 2px solid #DDF1FF;
+}
+
+.verMatricula table, .verMatricula tr, .verMatricula th {
+	border: solid 1px gray;
+	border-collapse: collapse;
+}
+.verMatricula th {
+	background-color: #F5F5F5;
+}
+.verMatricula table {
+	margin-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+.verMatricula td {
+	padding: 1%;
+}
+.verMatricula .titulo {
+	font-weight: bold;
+	background-color: #FFFFE4;
+}
+
+.flechaImg{
+	width:100%;
+}
+
+
+.formMeterHorarioTutoria{
+	display:none;
+}
+.formMeterHorarioTutoria input{
+	border:1px solid #4F4F4F;
+	border-radius:5px;
+}
+.formMeterHorarioTutoria select{
+	border:1px solid #4F4F4F;
+	border-radius:5px;
+	padding-top:0.5px;
+	padding-bottom:0.5px;
+	height:60%;
+}
+
+.confirmarTut{
+	padding-left:1px;
+	padding-right:1px;
+}
+.mostrarFormHorarioTutoria{
+	border-radius: 10px;
+    background: #F7FFFF;
+    color: #68ACAE;
+    border: solid 1px #68ACAE;
+	cursor: pointer;
+	width:25%;
+}
+.mostrarFormHorarioTutoria:hover{
+	box-shadow: 0px 0px 10px 0px #797a9e;
+}
+
+/* cambios */
+
+.tutorias .datosTutoria td {
+	margin: 1%;
+	font-size:20px;
+}
+.datosTutoria td th tr{
+	border: solid 20px red;
+}
+
+.tutorias .datosTutoria .etiquetasTutoria {
+	background-color: #DAD1FF;
+}
+
+.par {
+	background-color: #F0FFFF;
+}
+.impar {
+	background-color: #D1E3FF;
+}
+
+.tutorias .EncabezadoTutorias {
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	color: #5F5F5F;
+}
+
+.cambiarNumPag {
+	padding: 4px 10px;
+	border-radius: 100px;
+	background: #F1F1F1;
+	color: #585858;
+	border: solid 1px #585858;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:2%;
+}
+
+.botonCambio {
+	margin-left: 2%;
+    margin-top: 4px;
+    padding: 1px 3px;
+    width: 100px;
+    height: 27px;
+    border-radius: 26px;
+    background: #F7FFFF;
+    color: #68ACAE;
+    border: solid 1px #68ACAE;
+    cursor: pointer;
+}
+
+.current {
+	padding: 1%;
+	font-size: 140%;
+	color: #15ABB9;
+	font-weight:bold;
+	border-radius: 100px;
+	font-size: 30px;
+}
+
+.enlacePaginacion{
+	padding: 1%;
+	color: #4F4F4F;
+	font-size:22px;
+	transition: 0.3s;
+	border-radius: 100px;
+	text-decoration:none;
+}
+
+.botones{
+	float: left;
+}
+
+.botonDesplegable{
+	margin-left: 2%;
+    margin-top: 4px;
+    padding: 1px 3px;
+    width: 37px;
+    height: 29px;
+    border-radius: 26px;
+    background: #F7FFFF;
+    color: #68ACAE;
+    border: solid 1px #68ACAE;
+    cursor: pointer;
+    
+}
+
+.divBoton{
+	margin-left: 7px;
+    margin-top: -4px;
+}
+
+.margenBotonesMatriculacion{
+	margin-top: 19px;
+}
+
+/* clase para mostrar errores*/
+.errores{
+	border-radius: 10px;
+	border: solid red 2px;
+	color: red;
+}
+.errores ul{
+	padding: 1% 0 1% 2%; 
+}
+
+/*Clase conjunto asignaturas*/
+
+.asignaturas{
+	overflow-y: scroll;
+	height: 200px;
+}

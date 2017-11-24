@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+	.tablet-col-5 {
+		width: 5%;
+	}
+
+	.tablet-col-10 {
+		width: 10%;
+	}
+
+	.tablet-col-15 {
+		width: 15%;
+	}
+
+	.tablet-col-20 {
+		width: 20%;
+	}
+
+	.tablet-col-25 {
+		width: 25%;
+	}
+
+	.tablet-col-30 {
+		width: 30%;
+	}
+
+	.tablet-col-35 {
+		width: 35%;
+	}
+
+	.tablet-col-40 {
+		width: 40%;
+	}
+
+	.tablet-col-45 {
+		width: 45%;
+	}
+
+	.tablet-col-50 {
+		width: 50%;
+	}
+
+	.tablet-col-55 {
+		width: 55%;
+	}
+
+	.tablet-col-60 {
+		width: 60%;
+	}
+
+	.tablet-col-65 {
+		width: 65%;
+	}
+
+	.tablet-col-70 {
+		width: 70%;
+	}
+
+	.tablet-col-75 {
+		width: 75%;
+	}
+
+	.tablet-col-80 {
+		width: 80%;
+	}
+
+	.tablet-col-85 {
+		width: 85%;
+	}
+
+	.tablet-col-90 {
+		width: 90%;
+	}
+
+	.tablet-col-95 {
+		width: 95%;
+	}
+
+	.tablet-col-100 {
+		width: 100%;
+	}
+
+	.tablet-col-33 {
+		width: 33.33333%;
+	}
+
+	.tablet-col-66 {
+		width: 66.66666%;
+	}
+
+	[class*="tablet-col-"] {
+		box-sizing: border-box;
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.esconderEnTablet {
+		display: none;
+	}
+	
+	.mostrarEnTablet {
+		display: block;
+	}
+
+	/* Estilos para el menú en tablet
+	 ========================================================================== */
+
+	#desplegableMenu {
+		color: #FFF;
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		height: 29px;
+		text-decoration: none;
+		padding-top: 3px;
+	}
+
+	menu ul {
+		background-color: #75a0d4;
+		display: none;
+		width: 100%;
+		position: relative;
+		border-bottom: #373b3c 1px solid;
+	}
+	menu li {
+		float: none;
+		border-top: #373b3c 1px solid;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 0px;
+	}
+
+	menu ul li a {
+		font-size: 16px;
+		font-weight: normal;
+	}
+	
+	#menuPie{
+		display: none;
+	}
+}
