@@ -8,7 +8,7 @@ DROP TABLE Aulas CASCADE CONSTRAINTS;
 DROP TABLE Becarios CASCADE CONSTRAINTS;
 DROP TABLE Becas CASCADE CONSTRAINTS;
 DROP TABLE Departamentos CASCADE CONSTRAINTS;
-DROP TABLE Despachos CASCADE CONSTRAINTS;
+DROP TABLE Despachos CASCADE CONcSTRAINTS;
 DROP TABLE Eventos CASCADE CONSTRAINTS;
 DROP TABLE Expedientes CASCADE CONSTRAINTS;
 DROP TABLE Grados CASCADE CONSTRAINTS;
@@ -2064,7 +2064,7 @@ PROCEDURE Insertar (nombrePrueba VARCHAR2, v_Nombre IN Aulas.Nombre%TYPE, v_Capa
         DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(v_Salida, salidaEsperada));
         EXCEPTION
             WHEN OTHERS THEN
-                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ':  ' || ASSERT_EQUALS(FALSE, salidaEsperada));
                 ROLLBACK;
     END Insertar;
 PROCEDURE Actualizar (nombrePrueba VARCHAR2, v_OID_A IN Aulas.OID_A%TYPE, v_Nombre IN Aulas.Nombre%TYPE, v_Capacidad IN Aulas.Capacidad%TYPE, v_Tipo IN Aulas.Tipo%TYPE, salidaEsperada BOOLEAN)
